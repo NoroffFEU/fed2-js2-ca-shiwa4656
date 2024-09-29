@@ -1,1 +1,421 @@
 @import url(_reset.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Navbar Style */
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.create-btn :hover {
+    cursor: pointer;
+
+}
+
+/* Logo in Nav */
+.logo-section img {
+    width: 100px;
+    height: auto;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0 20px;
+    
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 2px solid #ff4500;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    padding: 9px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    font-size: 14px;
+    cursor: pointer;
+    height: 100%;
+}  
+
+/* Buttons for Login and Register */
+.button-container {
+    display: flex;
+}
+
+.button-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-btn {
+    background-color: #007bff;
+}
+
+.register-btn {
+    background-color: #28a745;
+}
+
+.login-btn:hover, .register-btn:hover {
+    opacity: 0.9;
+}
+
+/* Main Content (below the nav bar) */
+.main-content {
+    margin-top: 80px;
+    padding: 20px;
+}
+.main-content h1, p{
+    margin-left: 35%;
+
+}
+
+/* Post Card Container */
+.post-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+.post-card a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Post header with profile and username */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.post-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header .username {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Post content */
+.post-content {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Post image(s) */
+.post-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive: Grid for multiple images */
+.post-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.post-image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Registration css style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.loginRegistration-main {
+    background: linear-gradient(135deg, #ff4500, #ff9100);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff4500;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ff4500;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: #ff9100;
+}
+
+/* Submit Button */
+.form-container button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff4500, #ff9100);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: linear-gradient(135deg, #ff9100, #ff4500);
+}
+
+/* Switch between Login/Register */
+.form-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-container p a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .form-container h2 {
+        font-size: 22px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"],
+    .form-container button {
+        font-size: 14px;
+    }
+}
+
+
+/*Login page stye */
+
+.login-main {
+    background: linear-gradient(135deg, #ff4500, #ff9100);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff4500;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ff4500;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: #ff9100;
+}
+
+.form-container button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff4500, #ff9100);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: linear-gradient(135deg, #ff9100, #ff4500);
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-container p a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+
+/*Posting html page styles */
+.post-body{
+    background-color: #ff9100;
+}
+.mainp {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 4%;
+}
+
+.formp {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], textarea {
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Set a minimum height */
+}
+
+button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Placeholder styles */
+::placeholder {
+    color: #aaa;
+    opacity: 1; /* Firefox lowers the opacity of placeholders */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .mainp {
+        width: 90%;
+    }
+}

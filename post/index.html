@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noroff FED2 JS2 CA</title>
     <script type="module" src="/src/app.js"></script>
+    <link rel="stylesheet" href="./../src/css/style.css" />
   </head>
   <body>
-    <h1>Post Page</h1>
+    <div class="post-card">
+      <a href="posts/page.html">
+        <div class="post-header">
+          <img
+            id="authorBurner"
+            src="./public/images/photo-1515021477923-4d707a1cd1ba.avif"
+            alt="User Profile" />
+          <div id="username" class="username">John Doe</div>
+        </div>
+      </a>
+      <h2 id="title">GYm tips</h2>
+      <div id="content" class="post-content">
+        which method is the best when going to the gym
+      </div>
+      <!-- Single Image -->
+      <div class="post-image">
+        <img
+          id="postimage"
+          src="./public/images/photo-1534438327276-14e5300c3a48.avif"
+          alt="Post Image" />
+      </div>
+      <!-- Like Button and Comment Section -->
+
+      <div class="comment-section">
+        <input
+          id="comment-body"
+          type="text"
+          class="comment-input"
+          placeholder="Add a comment..." />
+        <button id="add-comment" class="comment-button">Comment</button>
+        <div id="commentList" class="comments-list">
+          <!-- <div class="comment-item">User1: Great post!</div>
+          <div class="comment-item">User2: I agree with you!</div> -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>

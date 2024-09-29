@@ -1,28 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noroff FED2 JS2 CA</title>
-    <script type="module" src="/src/app.js"></script>
+    <title>BuzzNet - Login</title>
+    <link rel="stylesheet" href="../../src/css/style.css" />
+    <script src="/src/app.js" type="module"></script>
   </head>
-
   <body>
-    <h1>Login</h1>
-    <form name="login">
-      <div>
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email" required />
+    <nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search BuzzNet..." />
+        <button>Search</button>
       </div>
-
-      <div>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required />
+    </nav>
+    <div class="loginRegistration-main">
+      <div class="form-container">
+        <h2>Login to BuzzNet</h2>
+        <form name="login">
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+        <p>
+          Don't have an account?
+          <a href="/auth/register/">Register here</a>
+        </p>
       </div>
-
-      <a href="/auth/register/">Register</a>
-      <button>Login</button>
-    </form>
+    </div>
   </body>
 </html>

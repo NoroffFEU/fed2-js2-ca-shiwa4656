@@ -1,1 +1,3 @@
-export async function onDeletePost(event) {}
+export async function onDeletePost(event) {
+    
+}

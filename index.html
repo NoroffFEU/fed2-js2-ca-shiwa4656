@@ -1,22 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuzzNet - Home</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
+    <style>
+      /* Styles for the like button */
+      .like-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+        margin-right: 10px;
+      }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noroff FED2 JS2 CA</title>
-  <script type="module" src="/src/app.js"></script>
-</head>
+      .like-button:hover {
+        background-color: #0056b3;
+      }
 
-<body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
+      /* Styles for the comment section */
+      .comment-section {
+        margin-top: 15px;
+      }
 
-  <h1>Home</h1>
+      .comment-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
 
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/">Login</a>
-  <a href="/auth/register/">Register</a>
-  <button>Logout</button>
-</body>
+      .comment-button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+
+      .comment-button:hover {
+        background-color: #218838;
+      }
+
+      .comments-list {
+        margin-top: 10px;
+        padding-left: 15px;
+        border-left: 2px solid #dcdcdc;
+      }
+
+      .comment-item {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-section">
+        <img src="./public/images/LOgoBuzzNut.jpg" alt="BuzzNet Logo" />
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search BuzzNet..." />
+        <button>Search</button>
+      </div>
+
+      <div class="button-container">
+        <a
+          href="./post/create/"
+          class="create-btn"
+          id="newpost-btn"
+          title="add a post"
+          >➕ Post</a
+        >
+        <a href="#" class="register-btn" id="logOut">Log out</a>
+      </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <h1>Welcome to BuzzNet</h1>
+      <p>Discover, connect, and share your ideas!</p>
+
+      <!-- Example Post Card with Image -->
+      <div class="post-card">
+        <a href="posts/page.html">
+          <div class="post-header">
+            <img
+              src="./public/images/photo-1515021477923-4d707a1cd1ba.avif"
+              alt="User Profile" />
+            <div class="username">John Doe</div>
+          </div>
+        </a>
+        <h2>GYm tips</h2>
+        <div class="post-content">
+          which method is the best when going to the gym
+        </div>
+        <!-- Single Image -->
+        <div class="post-image">
+          <img
+            src="./public/images/photo-1534438327276-14e5300c3a48.avif"
+            alt="Post Image" />
+        </div>
+        <!-- Like Button and Comment Section -->
+        <div class="post-actions">
+          <button class="like-button">👍 Like</button>
+          <a href="./post/edit/index.html"
+            ><button class="like-button">Edit</button></a
+          >
+          <button class="like-button delete-btn">Delete</button>
+        </div>
+        <div class="comment-section">
+          <input
+            type="text"
+            class="comment-input"
+            placeholder="Add a comment..." />
+          <button class="comment-button">Comment</button>
+          <div class="comments-list"></div>
+        </div>
+      </div>
+      <a href="/post/">
+        <button style="margin-left: 50%">View more posts</button>
+      </a>
+    </main>
+    <script type="module" src="./src/app.js"></script>
+  </body>
 </html>
